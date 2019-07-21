@@ -1,6 +1,6 @@
 # management
 
-chung management
+基于egg后台管理项目
 
 ## QuickStart
 
