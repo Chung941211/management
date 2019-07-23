@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Hacker News</title>
+    <title>首页</title>
 </head>
 
 <body>
