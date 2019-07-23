@@ -2,8 +2,8 @@
 
 const Controller = require('egg').Controller;
 
-class HomeController extends Controller {
-  async index() {
+class NewsController extends Controller {
+  async list() {
     const dataList = {
       list: [
         { id: 1, title: 'this is news 1', url: '/news/1' },
@@ -11,8 +11,8 @@ class HomeController extends Controller {
       ],
     };
 
-    await this.ctx.render('home/index.tpl', dataList);
+    await this.ctx.render('news/list.tpl', dataList);
   }
 }
 
-module.exports = HomeController;
+module.exports = NewsController;
