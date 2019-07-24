@@ -29,6 +29,11 @@ module.exports = appInfo => {
       '.tpl': 'nunjucks',
     },
   };
+  config.index = {
+    id: 'a450089706',
+    serverUrl: 'http://twxapp.jperation.cn/index.php/iapi/membervip',
+    openid: 'o9Vbtw1W0ke-eb0g6kE4SD1eh6qU',
+  };
 
   return {
     ...config,

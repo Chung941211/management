@@ -6,7 +6,8 @@
 
 <body>
     <ul class="news-view view">
-        首页
+        首页 {% block dataList %}
+        <div>{{ data.msg }}</div>{% endblock %}
     </ul>
 </body>
 

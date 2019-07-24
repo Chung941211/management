@@ -4,13 +4,9 @@ const Controller = require('egg').Controller;
 
 class HomeController extends Controller {
   async index() {
-    const dataList = {
-      list: [
-        { id: 1, title: 'this is news 1', url: '/news/1' },
-        { id: 2, title: 'this is news 2', url: '/news/2' },
-      ],
-    };
-
+    const ctx = this.ctx;
+    const page = ctx.query.page || 1;
+    const dataList = await ctx.service.home.index(page);
     await this.ctx.render('home/index.tpl', dataList);
   }
 }
