@@ -6,6 +6,11 @@ class HomeService extends Service {
   async index(page = 1) {
     const { serverUrl, id, openid } = this.config.index;
 
+    const num = new Set();
+    [ 2, 3, 5, 4, 5, 2, 2 ].forEach(item => num.add(item));
+    console.log(num);
+
+
     const data = await this.ctx.curl(`${serverUrl}/center/member_center`, {
       data: {
         id: `"${id * (page - 1)}"`,

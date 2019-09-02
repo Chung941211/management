@@ -23,6 +23,9 @@ module.exports = appInfo => {
     // myAppName: 'egg',
   };
 
+  config.MONGODB = {
+    url: 'mongodb://localhost:27017/management',
+  };
   config.view = {
     defaultViewEngine: 'nunjucks',
     mapping: {
