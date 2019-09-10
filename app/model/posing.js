@@ -3,7 +3,7 @@ const { mongoose, autoIncrement, Schema } = require('../common/server');
 
 const posingSchema = new Schema({
 
-  title: { type: String, required: true, defalut: ''}, // 文章标题
+  title: { type: String, required: true, defalut: '' }, // 文章标题
 
   description: { type: String, default: '' }, // 简介
 
@@ -24,4 +24,4 @@ posingSchema.plugin(autoIncrement.plugin, {
 });
 
 
-exports.Posing = mongoose.model('posing', posingSchema)
+exports.Posing = mongoose.model('posing', posingSchema);
