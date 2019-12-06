@@ -10,7 +10,8 @@
     "egg": "^2.15.1",
     "egg-scripts": "^2.11.0",
     "egg-view-nunjucks": "^2.2.0",
-    "mongoose-auto-increment": "^5.0.1"
+    "mongoose-auto-increment": "^5.0.1",
+    "react-router": "^5.0.1"
   },
   "devDependencies": {
     "autod": "^3.0.1",
